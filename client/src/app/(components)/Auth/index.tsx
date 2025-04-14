@@ -6,11 +6,7 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import Image from 'next/image';
 
 const Auth = () => {
-  const { data: session, status } = useSession();
-
-  if (status === "loading") {
-    return <div>Loading...</div>;
-  }
+  const { data: session } = useSession();
 
   return session ? (
     <div className="flex items-center gap-4 p-4">
@@ -31,7 +27,7 @@ const Auth = () => {
       </button>
     </div>
   ) : (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center w-full bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
           Welcome Back
