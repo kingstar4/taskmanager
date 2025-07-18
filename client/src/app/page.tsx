@@ -1,13 +1,12 @@
-"use client";
+import React from 'react';
+import Project from './dashboard/page';
 
-import AuthGate from "./(components)/AuthGate";
+// type Props = {}
 
-export default function Home() {
+const page = () => {
   return (
-    <main className="min-h-screen w-full">
-      <AuthGate>
-        <div>Redirecting...</div>
-      </AuthGate>
-    </main>
-  );
+    <Project/>
+  )
 }
+
+export default page

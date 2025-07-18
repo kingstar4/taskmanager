@@ -1,16 +1,14 @@
 'use client';
 
 import DashboardWrapper from "../DashboardWrapper";
-import AuthGate from "../(components)/AuthGate";
+
 
 export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <AuthGate>
+  return ( 
       <DashboardWrapper>{children}</DashboardWrapper>
-    </AuthGate>
   );
 }
