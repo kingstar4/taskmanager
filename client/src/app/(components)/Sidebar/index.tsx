@@ -29,9 +29,9 @@ const Sidebar = () => {
             </div>
             {/* Team */}
             <div className="flex items-center gap-5 border-y-[1.5px] border-gray-200 px-8 py-4 dark:border-gray-700">
-              <Image src="/logo.png" alt="Logo" width={40} height={40}/>  
+              {/* <Image src="/logo.png" alt="Logo" width={40} height={40}/>   */}
               <div> 
-                <h3 className='text-md font-bold tracking-wide dark:text-gray-200'> EDROH TEAM</h3>
+                <h3 className='text-md font-bold tracking-wide dark:text-gray-200'> Manage Taks</h3>
                 <div className="mt-1 flex items-start gap-2">
                     <LockIcon className='mt-[0.1rem] h-3 w-3 text-gray-500 dark:text-gray-400'/>
                     <p className="text-xs text-gray-500">Private</p>
@@ -41,14 +41,14 @@ const Sidebar = () => {
             {/* Navbar Links */}
             <nav className='z-10 w-full'>
              <SidebarLink icon={Home} label="Home" href='/'/>
-             <SidebarLink icon={Briefcase} label="Timeline" href='/timeline'/>
+             {/* <SidebarLink icon={Briefcase} label="Timeline" href='/timeline'/>
              <SidebarLink icon={Search} label="Search" href='/search'/>
              <SidebarLink icon={Settings} label="Settings" href='/setting'/>
              <SidebarLink icon={User} label="Users" href='/Users'/>
-             <SidebarLink icon={Users} label="Teams" href='/teams'/>
+             <SidebarLink icon={Users} label="Teams" href='/teams'/> */}
             </nav>
             {/* Projects */}
-            <button onClick={()=> setShowProjects(!showProjects)} className="flex w-full items items-center justify-between px-8 py-3 text-gray-500">
+            {/* <button onClick={()=> setShowProjects(!showProjects)} className="flex w-full items items-center justify-between px-8 py-3 text-gray-500">
               <span>Project</span>
               {showProjects ? (<ChevronUp className='h-5 w-5'/>) : (<ChevronDown className='h-5 w-5'/>)}
             </button>
@@ -59,14 +59,14 @@ const Sidebar = () => {
                 <SidebarLink icon={Briefcase} label="Web Development" href="/project/2"/>
                 <SidebarLink icon={Briefcase} label="Mobile Development" href="/project/3"/>
               </>
-            )}
+            )} */}
 
             {/* Priority */}
-            <button onClick={()=> setShowPriority(!showPriority)} className="flex w-full items items-center justify-between px-8 py-3 text-gray-500">
+            {/* <button onClick={()=> setShowPriority(!showPriority)} className="flex w-full items items-center justify-between px-8 py-3 text-gray-500">
               <span>Priority</span>
               {showPriority ? (<ChevronUp className='h-5 w-5'/>) : (<ChevronDown className='h-5 w-5'/>)}
-            </button>
-            {showPriority && (
+            </button> */}
+            {/* {showPriority && (
               <>
                 <SidebarLink icon={AlertCircle} label="Urgent" href="/priority/urgent"/>
                 <SidebarLink icon={ShieldAlert} label="High" href="/priority/high"/>
@@ -74,7 +74,7 @@ const Sidebar = () => {
                 <SidebarLink icon={AlertOctagon} label="Low" href="/priority/low"/>
                 <SidebarLink icon={Layers3Icon} label="Backlog" href="/priority/teams"/>
               </>
-            )}
+            )} */}
         </div>
     </div>
   )
